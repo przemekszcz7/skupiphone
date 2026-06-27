@@ -1,0 +1,6 @@
+{
+  "name": "Skup iPhone - Nowa Sól",
+  "description": "Skup iPhone w Nowej Soli. Każdy model, każdy stan. Gotówka od ręki. Odbiór gratis do 50 km. Szybka wycena. Tel: 734 614 708",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

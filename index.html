@@ -1,0 +1,1313 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skup iPhone - Nowa Sól · Płacę od ręki · 734 614 708</title>
+    <meta name="description" content="Skup iPhone w Nowej Soli. Każdy model, każdy stan. Gotówka od ręki. Odbiór gratis do 50 km. Szybka wycena. Tel: 734 614 708" />
+    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/LLTzBqg/660407037-26115839631357935-6683002801443309917-n.jpg" />
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+      :root {
+        --dark: #1A1A1A;
+        --mid: #555555;
+        --muted: #888888;
+        --border: #E8E8E8;
+        --border-strong: #D0D0D0;
+        --accent: #1D7FE8;
+        --accent-hover: #1560C0;
+        --accent-light: #EBF3FD;
+        --page: #FFFFFF;
+        --alt: #F7F7F7;
+        --card: #FAFAFA;
+        --white: #FFFFFF;
+      }
+
+      /* Base Resets */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--page);
+        color: var(--dark);
+        line-height: 1.72;
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Typography */
+      h1 {
+        font-weight: 800;
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        letter-spacing: -0.03em;
+        line-height: 1;
+        color: var(--dark);
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+        letter-spacing: -0.02em;
+        color: var(--dark);
+      }
+
+      h3 {
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--dark);
+      }
+
+      .section-label {
+        font-weight: 600;
+        font-size: 0.72rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--accent);
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.72;
+        color: var(--mid);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      /* Layout & Spacing */
+      .container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .section {
+        padding: 80px 0;
+      }
+
+      .section-alt {
+        background-color: var(--alt);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .section-header {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 48px auto;
+      }
+
+      .section-subtitle {
+        color: var(--muted);
+        font-size: 1rem;
+        margin-top: 8px;
+        font-weight: 400;
+      }
+
+      .blue-rule-centered {
+        width: 48px;
+        height: 3px;
+        background-color: var(--accent);
+        border: none;
+        margin: 14px auto 48px auto;
+      }
+
+      .blue-rule-left {
+        width: 48px;
+        height: 3px;
+        background-color: var(--accent);
+        border: none;
+        margin: 14px 0 48px 0;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        background-color: var(--dark);
+        color: var(--white);
+        padding: 10px 0;
+        text-align: center;
+        font-size: 0.82rem;
+        font-weight: 400;
+      }
+
+      .top-bar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px 8px;
+        padding: 0 24px;
+      }
+
+      .top-bar-link {
+        color: var(--white);
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+      }
+
+      .top-bar-link:hover {
+        color: var(--accent);
+        border-bottom-color: var(--accent);
+      }
+
+      /* Sticky Navigation */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.97);
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+
+      .nav-container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        position: relative;
+      }
+
+      .logo-link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .logo-img {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .logo-text-container {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.15;
+      }
+
+      .logo-title {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--dark);
+      }
+
+      .logo-subtitle {
+        font-weight: 400;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        list-style: none;
+      }
+
+      .nav-link {
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: var(--mid);
+      }
+
+      .nav-link:hover {
+        color: var(--dark);
+      }
+
+      .nav-cta-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-cta {
+        background-color: var(--accent);
+        color: var(--white) !important;
+        font-weight: 600;
+        border-radius: 100px;
+        padding: 9px 22px;
+        font-size: 0.875rem;
+        box-shadow: 0 2px 8px rgba(29, 127, 232, 0.15);
+      }
+
+      .nav-cta:hover {
+        background-color: var(--accent-hover);
+        box-shadow: 0 4px 12px rgba(29, 127, 232, 0.25);
+      }
+
+      /* CSS-Only Burger Menu */
+      .nav-checkbox {
+        display: none;
+      }
+
+      .nav-burger {
+        display: none;
+        font-size: 1.6rem;
+        cursor: pointer;
+        color: var(--dark);
+        user-select: none;
+        padding: 8px;
+      }
+
+      .nav-mobile {
+        display: none;
+      }
+
+      /* Hero Section */
+      .hero {
+        min-height: calc(100vh - 120px);
+        background-image: url('https://i.ibb.co/p6GPgfC4/Apple-iphone13-colors-geo-09142021-big-jpg-large-2x-1183633775.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.97) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.3) 100%);
+        z-index: 1;
+      }
+
+      .hero-container {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 100px 24px;
+      }
+
+      .hero-content {
+        max-width: 560px;
+        text-align: left;
+      }
+
+      .hero-title-light {
+        font-weight: 300;
+        color: var(--mid);
+      }
+
+      .hero-body {
+        font-size: 1.05rem;
+        margin: 20px 0;
+        color: var(--mid);
+      }
+
+      .hero-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 20px 0 32px 0;
+      }
+
+      .hero-chip {
+        background-color: var(--accent-light);
+        color: var(--accent);
+        border-radius: 100px;
+        padding: 8px 16px;
+        font-weight: 500;
+        font-size: 0.85rem;
+        border: 1px solid rgba(29, 127, 232, 0.08);
+      }
+
+      .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .btn-primary {
+        background-color: var(--accent);
+        color: var(--white) !important;
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 14px 28px;
+        box-shadow: 0 4px 16px rgba(29, 127, 232, 0.3);
+        text-align: center;
+        display: inline-block;
+      }
+
+      .btn-primary:hover {
+        background-color: var(--accent-hover);
+        box-shadow: 0 6px 20px rgba(29, 127, 232, 0.4);
+      }
+
+      .btn-secondary {
+        border: 1.5px solid var(--border);
+        color: var(--mid) !important;
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 14px 28px;
+        text-align: center;
+        display: inline-block;
+        background-color: var(--white);
+      }
+
+      .btn-secondary:hover {
+        border-color: var(--accent);
+        color: var(--accent) !important;
+      }
+
+      /* Stats / Trust Bar */
+      .stats-bar {
+        background-color: var(--dark);
+        padding: 40px 0;
+      }
+
+      .stats-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .stat-item {
+        text-align: center;
+        flex: 1;
+        position: relative;
+      }
+
+      .stat-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 1px;
+        height: 70%;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .stat-num {
+        font-weight: 800;
+        color: var(--white);
+        font-size: 2rem;
+        line-height: 1;
+      }
+
+      .stat-label {
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.82rem;
+        margin-top: 4px;
+      }
+
+      /* About / How It Works */
+      .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .step-card {
+        background-color: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 32px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        transition: all 0.2s ease;
+      }
+
+      .step-card:hover {
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        transform: translateY(-2px);
+      }
+
+      .step-circle {
+        width: 48px;
+        height: 48px;
+        background-color: var(--accent);
+        color: var(--white);
+        border-radius: 100px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px auto;
+      }
+
+      .step-title {
+        font-weight: 600;
+        font-size: 1.05rem;
+        color: var(--dark);
+        margin-bottom: 10px;
+      }
+
+      .step-desc {
+        font-weight: 400;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.65;
+      }
+
+      /* Why Me Section */
+      .why-container {
+        display: grid;
+        grid-template-columns: 55fr 45fr;
+        gap: 64px;
+        align-items: start;
+      }
+
+      .feature-list {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .feature-row {
+        display: flex;
+        align-items: flex-start;
+        border-bottom: 1px solid var(--border);
+        padding: 18px 0;
+      }
+
+      .feature-row:last-child {
+        border-bottom: none;
+      }
+
+      .checkmark-box {
+        background-color: var(--accent-light);
+        border-radius: 6px;
+        width: 36px;
+        height: 36px;
+        color: var(--accent);
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .feature-content {
+        margin-left: 16px;
+      }
+
+      .feature-title {
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: var(--dark);
+        line-height: 1.3;
+      }
+
+      .feature-desc {
+        font-weight: 400;
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin-top: 4px;
+        line-height: 1.5;
+      }
+
+      /* Right Side Dark Contact Card */
+      .contact-card-dark {
+        background-color: var(--dark);
+        border-radius: 12px;
+        padding: 36px 32px;
+        color: var(--white);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      }
+
+      .contact-card-dark .card-label {
+        font-weight: 600;
+        font-size: 0.72rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      .contact-card-dark .card-phone {
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: var(--white);
+        display: block;
+        margin: 14px 0;
+        text-decoration: none;
+      }
+
+      .contact-card-dark .card-phone:hover {
+        color: var(--accent);
+      }
+
+      .contact-card-dark .card-divider {
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        margin: 16px 0;
+      }
+
+      .contact-card-dark .card-text {
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.875rem;
+        line-height: 1.5;
+      }
+
+      .contact-card-dark .card-text-spacing {
+        margin-top: 8px;
+      }
+
+      .contact-card-dark .card-italic {
+        font-style: italic;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 0.82rem;
+        margin-top: 16px;
+        display: block;
+      }
+
+      .contact-card-dark .card-fb-link {
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .contact-card-dark .card-fb-link:hover {
+        color: var(--white);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      /* Models Section */
+      .models-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 12px;
+        margin-top: 40px;
+      }
+
+      .model-chip {
+        background-color: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 12px 16px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: var(--dark);
+        transition: all 0.2s ease;
+      }
+
+      .model-chip:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        background-color: var(--accent-light);
+        transform: translateY(-1px);
+      }
+
+      .callout-box {
+        background-color: var(--white);
+        border: 1.5px solid var(--accent);
+        border-radius: 12px;
+        padding: 24px 32px;
+        margin: 32px auto 0 auto;
+        max-width: 600px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(29, 127, 232, 0.05);
+      }
+
+      .callout-title {
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--dark);
+      }
+
+      .callout-desc {
+        font-weight: 400;
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-top: 6px;
+      }
+
+      /* Contact Section */
+      .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        max-width: 860px;
+        margin: 0 auto;
+      }
+
+      .contact-list {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-row {
+        border-bottom: 1px solid var(--border);
+        padding: 18px 0;
+      }
+
+      .contact-row:last-of-type {
+        border-bottom: none;
+      }
+
+      .contact-row-label {
+        font-weight: 500;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .contact-row-value {
+        font-weight: 400;
+        color: var(--mid);
+        font-size: 1rem;
+      }
+
+      .contact-row-value.phone-val {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: var(--dark);
+      }
+
+      .contact-row-value a {
+        color: var(--accent);
+        font-weight: 500;
+      }
+
+      .contact-row-value a:hover {
+        color: var(--accent-hover);
+        text-decoration: underline;
+      }
+
+      .contact-btn-group {
+        margin-top: 24px;
+      }
+
+      .contact-cta-primary {
+        display: block;
+        width: 100%;
+        background-color: var(--accent);
+        color: var(--white) !important;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 8px;
+        padding: 14px 32px;
+        text-align: center;
+        box-shadow: 0 4px 16px rgba(29, 127, 232, 0.25);
+        margin-bottom: 12px;
+      }
+
+      .contact-cta-primary:hover {
+        background-color: var(--accent-hover);
+        box-shadow: 0 6px 20px rgba(29, 127, 232, 0.35);
+      }
+
+      .contact-cta-secondary {
+        display: block;
+        width: 100%;
+        border: 1.5px solid var(--border);
+        color: var(--mid) !important;
+        font-weight: 500;
+        font-size: 1rem;
+        border-radius: 8px;
+        padding: 12px 32px;
+        text-align: center;
+        background-color: var(--white);
+      }
+
+      .contact-cta-secondary:hover {
+        border-color: var(--accent);
+        color: var(--accent) !important;
+      }
+
+      .contact-info-card {
+        background-color: var(--alt);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .info-card-label {
+        font-weight: 600;
+        font-size: 0.72rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--muted);
+        display: block;
+      }
+
+      .info-card-title {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: var(--dark);
+        margin: 12px 0;
+      }
+
+      .info-card-desc {
+        font-weight: 400;
+        color: var(--mid);
+        font-size: 0.95rem;
+      }
+
+      .info-card-divider {
+        border: none;
+        border-top: 1px solid var(--border);
+        margin: 16px 0;
+      }
+
+      .info-card-italic {
+        font-style: italic;
+        font-weight: 300;
+        color: var(--muted);
+        font-size: 0.875rem;
+        display: block;
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--dark);
+        border-top: 3px solid var(--accent);
+        padding: 28px 0;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .footer-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .footer-favicon {
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+
+      .footer-title {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: var(--white);
+      }
+
+      .footer-phone {
+        font-weight: 400;
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      .footer-phone:hover {
+        color: var(--accent);
+      }
+
+      .footer-copy {
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.2);
+      }
+
+      .footer-divider {
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+        margin: 12px 0;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        font-weight: 300;
+        font-size: 0.78rem;
+        color: rgba(255, 255, 255, 0.2);
+      }
+
+      .footer-bottom a {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .footer-bottom a:hover {
+        color: var(--accent);
+      }
+
+      /* Responsive Rules */
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .nav-burger {
+          display: block;
+        }
+
+        .nav-checkbox:checked ~ .nav-mobile {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 80px;
+          left: 0;
+          right: 0;
+          background-color: var(--white);
+          border-bottom: 1px solid var(--border);
+          padding: 24px;
+          gap: 16px;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-mobile a {
+          font-weight: 500;
+          font-size: 1rem;
+          color: var(--mid);
+          padding: 8px 0;
+          border-bottom: 1px solid var(--alt);
+        }
+
+        .nav-mobile a:hover {
+          color: var(--dark);
+          padding-left: 4px;
+        }
+
+        .nav-mobile .nav-mobile-cta {
+          background-color: var(--accent);
+          color: var(--white) !important;
+          font-weight: 600;
+          border-radius: 100px;
+          padding: 12px;
+          font-size: 0.95rem;
+          text-align: center;
+          border-bottom: none;
+          margin-top: 8px;
+          box-shadow: 0 4px 12px rgba(29, 127, 232, 0.25);
+        }
+
+        .nav-mobile .nav-mobile-cta:hover {
+          background-color: var(--accent-hover);
+        }
+
+        /* Hero */
+        .hero-overlay {
+          background: rgba(255, 255, 255, 0.94);
+        }
+
+        .hero-content {
+          max-width: 100%;
+        }
+
+        /* Stats */
+        .stats-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 24px 0;
+        }
+
+        .stat-item:not(:last-child)::after {
+          display: none;
+        }
+
+        .stat-item:nth-child(odd) {
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Steps Grid */
+        .steps-grid {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+
+        /* Why Me */
+        .why-container {
+          grid-template-columns: 1fr;
+          gap: 48px;
+        }
+
+        /* Models */
+        .models-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        /* Contact */
+        .contact-container {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        /* Footer */
+        .footer-top {
+          flex-direction: column;
+          text-align: center;
+          gap: 12px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-chips {
+          margin-bottom: 24px;
+        }
+
+        .hero-buttons {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .btn-primary, .btn-secondary {
+          width: 100%;
+        }
+
+        .models-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- 2. Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-container">
+        <span>Nowa Sól i okolice · Odbiór gratis do 50 km ·</span>
+        <a href="tel:734614708" class="top-bar-link">734 614 708</a>
+      </div>
+    </div>
+
+    <!-- 3. Navigation -->
+    <header>
+      <div class="nav-container">
+        <a href="#" class="logo-link" id="logo-nav">
+          <img src="https://i.ibb.co/LLTzBqg/660407037-26115839631357935-6683002801443309917-n.jpg" alt="Skup iPhone Nowa Sól Logo" class="logo-img" />
+          <div class="logo-text-container">
+            <span class="logo-title">Skup iPhone</span>
+            <span class="logo-subtitle">Nowa Sól</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links">
+          <li><a href="#jak-to-dziala" class="nav-link">Jak to działa</a></li>
+          <li><a href="#dlaczego-warto" class="nav-link">Dlaczego My</a></li>
+          <li><a href="#co-skupujemy" class="nav-link">Skupowane Modele</a></li>
+          <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+
+        <div class="nav-cta-wrapper">
+          <a href="tel:734614708" class="nav-cta">Zadzwoń teraz</a>
+        </div>
+
+        <!-- CSS Mobile Hamburger Button -->
+        <input type="checkbox" id="nav-open" class="nav-checkbox" />
+        <label for="nav-open" class="nav-burger">☰</label>
+
+        <!-- CSS Mobile Drawer Menu -->
+        <div class="nav-mobile">
+          <a href="#jak-to-dziala" onclick="document.getElementById('nav-open').checked = false;">Jak to działa</a>
+          <a href="#dlaczego-warto" onclick="document.getElementById('nav-open').checked = false;">Dlaczego My</a>
+          <a href="#co-skupujemy" onclick="document.getElementById('nav-open').checked = false;">Skupowane Modele</a>
+          <a href="#kontakt" onclick="document.getElementById('nav-open').checked = false;">Kontakt</a>
+          <a href="tel:734614708" class="nav-mobile-cta">Zadzwoń: 734 614 708</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 4. Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="section-label">Nowa Sól i okolice</span>
+          <hr class="hero-divider" />
+          <h1>
+            Sprzedaj iPhone<br />
+            <span class="hero-title-light">szybko i bezpiecznie.</span>
+          </h1>
+          <p class="hero-body">Skup każdej sztuki. Płacę od ręki. Odbiór lub wysyłka - Ty wybierasz.</p>
+          
+          <div class="hero-chips">
+            <span class="hero-chip">Gotówka od ręki</span>
+            <span class="hero-chip">Odbiór gratis do 50 km</span>
+            <span class="hero-chip">Szybka wycena</span>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="https://www.facebook.com/profile.php?id=61576478462241" target="_blank" rel="noopener referrer" class="btn-primary">Napisz - szybka wycena</a>
+            <a href="tel:734614708" class="btn-secondary">734 614 708</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Stats / Trust Bar -->
+    <section class="stats-bar">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-num">24h</div>
+          <div class="stat-label">Szybka odpowiedź</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">50km</div>
+          <div class="stat-label">Darmowy odbiór</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Każda sztuka</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">Gotówka</div>
+          <div class="stat-label">Płatność od ręki</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. About / How It Works Section -->
+    <section class="section section-alt" id="jak-to-dziala">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Jak to działa</span>
+          <h2>Trzy kroki do gotówki</h2>
+          <p class="section-subtitle">Bez komplikacji, bez czekania</p>
+          <hr class="blue-rule-centered" />
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-circle">1</div>
+            <h3 class="step-title">Napisz lub zadzwoń</h3>
+            <p class="step-desc">Wyślij model iPhone, stan i zdjęcia - dostaniesz wycenę w chwilę</p>
+          </div>
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-circle">2</div>
+            <h3 class="step-title">Ustalamy odbiór lub wysyłkę</h3>
+            <p class="step-desc">Przyjeżdżam do Ciebie gratis do 50 km lub wysyłasz kurierem</p>
+          </div>
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-circle">3</div>
+            <h3 class="step-title">Gotówka w dłoni</h3>
+            <p class="step-desc">Płacę od ręki przy odbiorze - bez przelewów i oczekiwania</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Why Me Section -->
+    <section class="section" id="dlaczego-warto">
+      <div class="container">
+        <div class="section-header-left">
+          <span class="section-label">Dlaczego warto</span>
+          <h2>Dlaczego właśnie u mnie?</h2>
+          <hr class="blue-rule-left" />
+        </div>
+
+        <div class="why-container">
+          <!-- Left Column: Features -->
+          <div class="feature-list">
+            <!-- Feature 1 -->
+            <div class="feature-row">
+              <div class="checkmark-box">✓</div>
+              <div class="feature-content">
+                <h3 class="feature-title">Płacę od ręki</h3>
+                <p class="feature-desc">gotówka przy odbiorze, bez oczekiwania</p>
+              </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-row">
+              <div class="checkmark-box">✓</div>
+              <div class="feature-content">
+                <h3 class="feature-title">Skup każdej sztuki</h3>
+                <p class="feature-desc">nowe, używane, uszkodzone - każdy model</p>
+              </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-row">
+              <div class="checkmark-box">✓</div>
+              <div class="feature-content">
+                <h3 class="feature-title">Odbiór gratis do 50 km</h3>
+                <p class="feature-desc">przyjeżdżam do Ciebie, Ty nie ruszasz się z domu</p>
+              </div>
+            </div>
+            <!-- Feature 4 -->
+            <div class="feature-row">
+              <div class="checkmark-box">✓</div>
+              <div class="feature-content">
+                <h3 class="feature-title">Wysyłka kurierem</h3>
+                <p class="feature-desc">możesz też wysłać - bezpieczna procedura</p>
+              </div>
+            </div>
+            <!-- Feature 5 -->
+            <div class="feature-row">
+              <div class="checkmark-box">✓</div>
+              <div class="feature-content">
+                <h3 class="feature-title">Szybka wycena</h3>
+                <p class="feature-desc">napisz model i stan - odpowiadam w kilka minut</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Card -->
+          <div class="contact-card-dark">
+            <span class="card-label">KONTAKT</span>
+            <a href="tel:734614708" class="card-phone">734 614 708</a>
+            <hr class="card-divider" />
+            <p class="card-text">Nowa Sól i okolice</p>
+            <p class="card-text card-text-spacing">Odbiór gratis do 50 km</p>
+            <span class="card-italic">Napisz - szybka wycena bez zobowiązań</span>
+            <a href="https://www.facebook.com/profile.php?id=61576478462241" target="_blank" rel="noopener referrer" class="card-fb-link">Facebook →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Models / What We Buy Section -->
+    <section class="section section-alt" id="co-skupujemy">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Co skupujemy</span>
+          <h2>Skup każdego iPhone</h2>
+          <p class="section-subtitle">Każdy model, każdy stan - wyceniam wszystko</p>
+          <hr class="blue-rule-centered" />
+        </div>
+
+        <div class="models-grid">
+          <div class="model-chip">iPhone 15 Pro Max</div>
+          <div class="model-chip">iPhone 15 Pro</div>
+          <div class="model-chip">iPhone 15 Plus</div>
+          <div class="model-chip">iPhone 15</div>
+          <div class="model-chip">iPhone 14 Pro Max</div>
+          <div class="model-chip">iPhone 14 Pro</div>
+          <div class="model-chip">iPhone 14 Plus</div>
+          <div class="model-chip">iPhone 14</div>
+          <div class="model-chip">iPhone 13 Pro Max</div>
+          <div class="model-chip">iPhone 13 Pro</div>
+          <div class="model-chip">iPhone 13 Mini</div>
+          <div class="model-chip">iPhone 13</div>
+          <div class="model-chip">iPhone 12 Pro Max</div>
+          <div class="model-chip">iPhone 12 Pro</div>
+          <div class="model-chip">iPhone 12 Mini</div>
+          <div class="model-chip">iPhone 12</div>
+          <div class="model-chip">iPhone 11 Pro Max</div>
+          <div class="model-chip">iPhone 11 Pro</div>
+          <div class="model-chip">iPhone 11</div>
+          <div class="model-chip">iPhone SE</div>
+          <div class="model-chip">iPhone XS Max</div>
+          <div class="model-chip">iPhone XS</div>
+          <div class="model-chip">iPhone XR</div>
+          <div class="model-chip">iPhone X</div>
+          <div class="model-chip">Starsze modele</div>
+        </div>
+
+        <div class="callout-box">
+          <h3 class="callout-title">Nie widzisz swojego modelu?</h3>
+          <p class="callout-desc">Napisz - wycenię każdy iPhone, nawet jeśli nie ma go na liście</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section class="section" id="kontakt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Kontakt</span>
+          <h2>Napisz lub zadzwoń.</h2>
+          <hr class="blue-rule-centered" />
+        </div>
+
+        <div class="contact-container">
+          <!-- Left side: contact items and primary actions -->
+          <div class="contact-list">
+            <div class="contact-row">
+              <span class="contact-row-label">TELEFON</span>
+              <div class="contact-row-value phone-val">
+                <a href="tel:734614708">734 614 708</a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-row-label">OBSZAR</span>
+              <div class="contact-row-value">Nowa Sól i okolice · odbiór gratis do 50 km</div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-row-label">FACEBOOK</span>
+              <div class="contact-row-value">
+                <a href="https://www.facebook.com/profile.php?id=61576478462241" target="_blank" rel="noopener referrer">Skup iPhone Nowa Sól →</a>
+              </div>
+            </div>
+
+            <div class="contact-btn-group">
+              <a href="tel:734614708" class="contact-cta-primary">Zadzwoń: 734 614 708</a>
+              <a href="https://www.facebook.com/profile.php?id=61576478462241" target="_blank" rel="noopener referrer" class="contact-cta-secondary">Napisz na Facebook</a>
+            </div>
+          </div>
+
+          <!-- Right side: delivery & shipment info card -->
+          <div class="contact-info-card">
+            <span class="info-card-label">DARMOWY ODBIÓR</span>
+            <h3 class="info-card-title">Nowa Sól i okolice do 50 km</h3>
+            
+            <hr class="info-card-divider" />
+            
+            <span class="info-card-label">WYSYŁKA</span>
+            <p class="info-card-desc">Możesz też wysłać kurierem - bezpieczna i szybka procedura</p>
+            
+            <hr class="info-card-divider" />
+            
+            <span class="info-card-italic">Odpowiadam szybko - wycena bez zobowiązań.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img src="https://i.ibb.co/LLTzBqg/660407037-26115839631357935-6683002801443309917-n.jpg" alt="Skup iPhone Logo Footer" class="footer-favicon" />
+            <span class="footer-title">Skup iPhone Nowa Sól</span>
+          </div>
+          <a href="tel:734614708" class="footer-phone">734 614 708</a>
+          <span class="footer-copy">© 2026</span>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          Nowa Sól · Odbiór gratis do 50 km · <a href="https://www.facebook.com/profile.php?id=61576478462241" target="_blank" rel="noopener referrer">Facebook</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+
